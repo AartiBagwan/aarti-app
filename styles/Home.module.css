@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  display: flex;
+ 
+  justify-content: center;
+  min-height: 100vh;
+  /* background: url(toys2.jpg) center/cover; */
+  background-repeat: no-repeat;
+
+}
+
+form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 50%;
+  background-color: burlywood;
+  backdrop-filter: blue(25px);
+  padding: 70px;
+  border-radius: 35%;
+  clip-path: circle(50% at 50% 50%);
+}
+
+header{
+  font-size: 30px;
+}
+
+.form_wrapper{
+display: flex;
+align-items: center;   
+}
+
+.triangle{
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+.triangle.left{
+  transform: rotate(-0deg);
+  margin-left: 1px;
+}
+.triangle.right{
+  transform: rotate(180deg);
+}
+
+input{
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+}
+
+button{
+  height: 40px;
+  padding: 0 20px;
+  background-color:  darkred;
+  color: white;
+  font-weight: bold;
+}
+
+.triangle .btn{
+  background-color: darkred;
+}
+@media screen and (max-width: 600px) {
+  form{ margin: 99px; margin-left: 100px;}
+  }
